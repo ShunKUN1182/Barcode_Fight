@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/ress.css" />
         <link rel="stylesheet" href="css/scan.css" />
         <script src="https://unpkg.com/quagga/dist/quagga.min.js"></script>
-        <!-- <script src="js/scan.js" defer></script> -->
+        <script src="js/scan.js" defer></script>
     </head>
     <body>
         <header>
@@ -18,8 +18,10 @@
                 1Pのバーコードを<br />
                 スキャンしてください
             </p>
-            <div class="barcode_box" id="camera">
+            <div class="barcode_box">
                 <h2>バーコード</h2>
+                <div id="camera"></div>
+                <p id="result"></p>
             </div>
         </main>
     </body>
