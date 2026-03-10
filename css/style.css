@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "myfont";
+    src: url("../fonts/Buildingsandundertherailwaytracksfree_ver.otf") format("opentype");
+}
+
+body {
+    background-color: #2b2b2b;
+    font-family: "myfont", sans-serif;
+}

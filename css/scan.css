@@ -1,8 +1,3 @@
-header {
-    height: 50px;
-    background-color: #555;
-}
-
 main {
     display: flex;
     flex-direction: column;
