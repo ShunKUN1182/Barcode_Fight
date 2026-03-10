@@ -63,7 +63,7 @@
             }
             .hp_bar {
                 width: 100%;
-                transition: 1s;
+                transition: 0.4s;
                 height: 15px;
                 background-color: #05d250;
                 border-radius: 8px;
@@ -72,11 +72,11 @@
                     content: "";
                     position: absolute;
                     top: 0;
-                    width: 100%;
+                    width: 159px;
                     height: 100%;
                     background-color: #d7d7d7;
                     border-radius: 8px;
-                    z-index: -1;
+                    z-index: -10000;
                 }
             }
         }
