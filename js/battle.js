@@ -16,6 +16,7 @@ const battleLog = document.querySelector(".battle_logs");
 const addModal = document.querySelector("#addModal");
 const modal = document.querySelector(".modal");
 const winName = document.querySelector("#winName");
+const charaCard = document.querySelector("#charaCard");
 console.log(addModal);
 
 const firstStatus = JSON.parse(localStorage.getItem("firstStatus"));
@@ -182,7 +183,52 @@ function outputHP(HP, ATKside) {
             setTimeout(() => {
                 modal.style.display = "block";
                 winName.textContent = document.querySelector("#firstCharaName").textContent;
-            });
+                if (firstStatus.CHARA == 0) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_1.png" alt="" />
+          `;
+                } else if (firstStatus.CHARA == 1) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_2.png" alt="" />
+          `;
+                } else if (firstStatus.CHARA == 2) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_3.png" alt="" />
+          `;
+                } else if (firstStatus.CHARA == 3) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_4.png" alt="" />
+          `;
+                } else if (firstStatus.CHARA == 4) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_5.png" alt="" />
+          `;
+                } else if (firstStatus.CHARA == 5) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_6.png" alt="" />
+          `;
+                } else if (firstStatus.CHARA == 6) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_7.png" alt="" />
+          `;
+                } else if (firstStatus.CHARA == 7) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_8.png" alt="" />
+          `;
+                } else if (firstStatus.CHARA == 8) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_9.png" alt="" />
+          `;
+                } else if (firstStatus.CHARA == 9) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_10.png" alt="" />
+          `;
+                } else {
+                    charaCard.innerHTML = `
+              <img src="img/chara_00.png" alt="" />
+          `;
+                }
+            }, 2000);
         }
         const parseHP = (HP / firstMaxHP) * 100;
         firstHPBar.style.width = `${parseHP}%`;
@@ -202,6 +248,51 @@ function outputHP(HP, ATKside) {
             setTimeout(() => {
                 modal.style.display = "block";
                 winName.textContent = document.querySelector("#secondCharaName").textContent;
+                if (secondStatus.CHARA == 0) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_1.png" alt="" />
+          `;
+                } else if (secondStatus.CHARA == 1) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_2.png" alt="" />
+          `;
+                } else if (secondStatus.CHARA == 2) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_3.png" alt="" />
+          `;
+                } else if (secondStatus.CHARA == 3) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_4.png" alt="" />
+          `;
+                } else if (secondStatus.CHARA == 4) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_5.png" alt="" />
+          `;
+                } else if (secondStatus.CHARA == 5) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_6.png" alt="" />
+          `;
+                } else if (secondStatus.CHARA == 6) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_7.png" alt="" />
+          `;
+                } else if (secondStatus.CHARA == 7) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_8.png" alt="" />
+          `;
+                } else if (secondStatus.CHARA == 8) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_9.png" alt="" />
+          `;
+                } else if (secondStatus.CHARA == 9) {
+                    charaCard.innerHTML = `
+              <img src="img/chara_10.png" alt="" />
+          `;
+                } else {
+                    charaCard.innerHTML = `
+              <img src="img/chara_00.png" alt="" />
+          `;
+                }
             }, 2000);
         }
         const parseHP = (HP / secondMaxHP) * 100;
