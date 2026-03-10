@@ -1,3 +1,6 @@
+const modal = document.querySelector(".modal");
+const resetBtn = document.querySelector("#resetBtn");
+
 window.addEventListener("DOMContentLoaded", () => {
     Quagga.init(
         {
@@ -31,5 +34,9 @@ window.addEventListener("DOMContentLoaded", () => {
         console.log(code);
 
         Quagga.stop();
+
+        modal.style.display = "block";
     });
 });
+
+console.log(modal, code);

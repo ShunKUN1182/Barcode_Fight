@@ -108,7 +108,7 @@ main {
     width: 100vw;
     height: 100vh;
     background-color: #2b2b2b;
-    /* display: none; */
+    display: none;
     p {
         font-size: 48px;
         color: #fff;
