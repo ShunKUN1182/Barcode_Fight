@@ -5,6 +5,7 @@ const atkStats = document.querySelector("#atkStats");
 const spdStats = document.querySelector("#spdStats");
 const charaCard = document.querySelector("#charaCard");
 const charaName = document.querySelector("#charaName");
+const addModal = document.querySelector("#addModal");
 const secondStatusbtn = document.querySelector("#secondBtn");
 const secondStatus = {};
 
@@ -50,66 +51,78 @@ window.addEventListener("DOMContentLoaded", () => {
 
         Quagga.stop();
 
-        modal.style.display = "block";
-        hpStats.textContent = secondStatus.HP;
-        atkStats.textContent = secondStatus.ATK;
-        spdStats.textContent = secondStatus.SPD;
-        if (secondStatus.CHARA == 0) {
-            charaCard.innerHTML = `
-              <img src="img/chara_1.png" alt="" />
-          `;
-            charaName.textContent = "メガドラグーン";
-        } else if (secondStatus.CHARA == 1) {
-            charaCard.innerHTML = `
-              <img src="img/chara_2.png" alt="" />
-          `;
-            charaName.textContent = "スシマル";
-        } else if (secondStatus.CHARA == 2) {
-            charaCard.innerHTML = `
-              <img src="img/chara_3.png" alt="" />
-          `;
-            charaName.textContent = "アップルノスケ";
-        } else if (secondStatus.CHARA == 3) {
-            charaCard.innerHTML = `
-              <img src="img/chara_4.png" alt="" />
-          `;
-            charaName.textContent = "デカモリラーメン";
-        } else if (secondStatus.CHARA == 4) {
-            charaCard.innerHTML = `
-              <img src="img/chara_5.png" alt="" />
-          `;
-            charaName.textContent = "プリンパル";
-        } else if (secondStatus.CHARA == 5) {
-            charaCard.innerHTML = `
-              <img src="img/chara_6.png" alt="" />
-          `;
-            charaName.textContent = "スニエル=スニー";
-        } else if (secondStatus.CHARA == 6) {
-            charaCard.innerHTML = `
-              <img src="img/chara_7.png" alt="" />
-          `;
-            charaName.textContent = "ドリンクザムライ";
-        } else if (secondStatus.CHARA == 7) {
-            charaCard.innerHTML = `
-              <img src="img/chara_8.png" alt="" />
-          `;
-            charaName.textContent = "ダンクファング";
-        } else if (secondStatus.CHARA == 8) {
-            charaCard.innerHTML = `
-              <img src="img/chara_9.png" alt="" />
-          `;
-            charaName.textContent = "バーガーバースト";
-        } else if (secondStatus.CHARA == 9) {
-            charaCard.innerHTML = `
-              <img src="img/chara_10.png" alt="" />
-          `;
-            charaName.textContent = "カーライガ";
-        } else {
-            charaCard.innerHTML = `
-              <img src="img/chara_00.png" alt="" />
-          `;
-            charaName.textContent = "シクラーメン";
-        }
+        addModal.insertAdjacentHTML(
+            "beforeend",
+            `
+                <div class="load_modal">
+                    <h2>生成中...</h2>
+                    <div class="load_bar"></div>
+                </div>
+            `,
+        );
+
+        setTimeout(() => {
+            modal.style.display = "block";
+            hpStats.textContent = secondStatus.HP;
+            atkStats.textContent = secondStatus.ATK;
+            spdStats.textContent = secondStatus.SPD;
+            if (secondStatus.CHARA == 0) {
+                charaCard.innerHTML = `
+                    <img src="img/chara_1.png" alt="" />
+                `;
+                charaName.textContent = "メガドラグーン";
+            } else if (secondStatus.CHARA == 1) {
+                charaCard.innerHTML = `
+                    <img src="img/chara_2.png" alt="" />
+                `;
+                charaName.textContent = "スシマル";
+            } else if (secondStatus.CHARA == 2) {
+                charaCard.innerHTML = `
+                    <img src="img/chara_3.png" alt="" />
+                `;
+                charaName.textContent = "アップルノスケ";
+            } else if (secondStatus.CHARA == 3) {
+                charaCard.innerHTML = `
+                    <img src="img/chara_4.png" alt="" />
+                `;
+                charaName.textContent = "デカモリラーメン";
+            } else if (secondStatus.CHARA == 4) {
+                charaCard.innerHTML = `
+                    <img src="img/chara_5.png" alt="" />
+                `;
+                charaName.textContent = "プリンパル";
+            } else if (secondStatus.CHARA == 5) {
+                charaCard.innerHTML = `
+                    <img src="img/chara_6.png" alt="" />
+                `;
+                charaName.textContent = "スニエル=スニー";
+            } else if (secondStatus.CHARA == 6) {
+                charaCard.innerHTML = `
+                    <img src="img/chara_7.png" alt="" />
+                `;
+                charaName.textContent = "ドリンクザムライ";
+            } else if (secondStatus.CHARA == 7) {
+                charaCard.innerHTML = `
+                    <img src="img/chara_8.png" alt="" />
+                `;
+                charaName.textContent = "ダンクファング";
+            } else if (secondStatus.CHARA == 8) {
+                charaCard.innerHTML = `
+                    <img src="img/chara_9.png" alt="" />
+                `;
+                charaName.textContent = "バーガーバースト";
+            } else if (secondStatus.CHARA == 9) {
+                charaCard.innerHTML = `
+                    <img src="img/chara_10.png" alt="" />
+                `;
+                charaName.textContent = "カーライガ";
+            } else {
+                charaCard.innerHTML = `
+                    <img src="img/chara_00.png" alt="" />
+                `;
+                charaName.textContent = "シクラーメン";
+            }
+        }, 550);
         secondStatusbtn.addEventListener("click", () => {
             localStorage.setItem("secondStatus", JSON.stringify(secondStatus));
         });

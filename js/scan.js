@@ -120,7 +120,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 `;
                 charaName.textContent = "シクラーメン";
             }
-        }, 2000);
+        }, 550);
         firstStatusBtn.addEventListener("click", () => {
             localStorage.setItem("firstStatus", JSON.stringify(firstStatus));
         });
