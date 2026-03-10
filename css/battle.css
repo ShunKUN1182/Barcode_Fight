@@ -23,7 +23,7 @@
             animation: firstAnime 2s infinite linear;
         }
         #secondImg {
-            animation: firstAnime 1.8s 0.3s infinite linear;
+            animation: firstAnime 1.8s 0.2s infinite linear;
         }
         .card_status {
             display: flex;
