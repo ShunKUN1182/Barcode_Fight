@@ -5,6 +5,7 @@ const atkStats = document.querySelector("#atkStats");
 const spdStats = document.querySelector("#spdStats");
 const charaCard = document.querySelector("#charaCard");
 const charaName = document.querySelector("#charaName");
+const firstStatusBtn = document.querySelector("#firstStatusBtn");
 const firstStatus = {};
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -114,5 +115,8 @@ window.addEventListener("DOMContentLoaded", () => {
           `;
             charaName.textContent = "シークレットドラゴン";
         }
+        firstStatusBtn.addEventListener("click", () => {
+            localStorage.setItem("firstStatus", JSON.stringify(firstStatus));
+        });
     });
 });
