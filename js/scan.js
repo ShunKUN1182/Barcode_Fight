@@ -3,6 +3,8 @@ const resetBtn = document.querySelector("#resetBtn");
 const hpStats = document.querySelector("#hpStats");
 const atkStats = document.querySelector("#atkStats");
 const spdStats = document.querySelector("#spdStats");
+const charaCard = document.querySelector("#charaCard");
+const charaName = document.querySelector("#charaName");
 const firstStatus = {};
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -42,9 +44,12 @@ window.addEventListener("DOMContentLoaded", () => {
         console.log(code.slice(9, 12));
         console.log(code.slice(-1));
         console.log(firstStatus);
-        firstStatus.HP = code.slice(3, 6) + "0";
-        firstStatus.ATK = code.slice(6, 9) + "0";
-        firstStatus.SPD = code.slice(9, 12) + "0";
+        const tempHP = code.slice(3, 6).replace(/^0/, "");
+        const tempATK = code.slice(6, 9).replace(/^0/, "");
+        const tempSPD = code.slice(9, 12).replace(/^0/, "");
+        firstStatus.HP = tempHP;
+        firstStatus.ATK = tempATK;
+        firstStatus.SPD = tempSPD;
         firstStatus.CHARA = code.slice(-1);
 
         Quagga.stop();
@@ -53,6 +58,62 @@ window.addEventListener("DOMContentLoaded", () => {
         hpStats.textContent = firstStatus.HP;
         atkStats.textContent = firstStatus.ATK;
         spdStats.textContent = firstStatus.SPD;
+        if (firstStatus.CHARA == 0) {
+            charaCard.innerHTML = `
+              <img src="img/chara_1.png" alt="" />
+          `;
+            charaName.textContent = "ファイヤードラゴン";
+        } else if (firstStatus.CHARA == 1) {
+            charaCard.innerHTML = `
+              <img src="img/chara_1.png" alt="" />
+          `;
+            charaName.textContent = "ファイヤードラゴン";
+        } else if (firstStatus.CHARA == 2) {
+            charaCard.innerHTML = `
+              <img src="img/chara_1.png" alt="" />
+          `;
+            charaName.textContent = "ファイヤードラゴン";
+        } else if (firstStatus.CHARA == 3) {
+            charaCard.innerHTML = `
+              <img src="img/chara_1.png" alt="" />
+          `;
+            charaName.textContent = "ファイヤードラゴン";
+        } else if (firstStatus.CHARA == 4) {
+            charaCard.innerHTML = `
+              <img src="img/chara_1.png" alt="" />
+          `;
+            charaName.textContent = "ファイヤードラゴン";
+        } else if (firstStatus.CHARA == 5) {
+            charaCard.innerHTML = `
+              <img src="img/chara_1.png" alt="" />
+          `;
+            charaName.textContent = "ファイヤードラゴン";
+        } else if (firstStatus.CHARA == 6) {
+            charaCard.innerHTML = `
+              <img src="img/chara_1.png" alt="" />
+          `;
+            charaName.textContent = "ファイヤードラゴン";
+        } else if (firstStatus.CHARA == 7) {
+            charaCard.innerHTML = `
+              <img src="img/chara_1.png" alt="" />
+          `;
+            charaName.textContent = "ファイヤードラゴン";
+        } else if (firstStatus.CHARA == 8) {
+            charaCard.innerHTML = `
+              <img src="img/chara_1.png" alt="" />
+          `;
+            charaName.textContent = "ファイヤードラゴン";
+        } else if (firstStatus.CHARA == 9) {
+            charaCard.innerHTML = `
+              <img src="img/chara_1.png" alt="" />
+          `;
+            charaName.textContent = "ファイヤードラゴン";
+        } else {
+            charaCard.innerHTML = `
+              <img src="img/barcode_img.png" alt="" />
+          `;
+            charaName.textContent = "シークレットドラゴン";
+        }
     });
 });
 
