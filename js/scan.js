@@ -63,32 +63,32 @@ window.addEventListener("DOMContentLoaded", () => {
             charaCard.innerHTML = `
               <img src="img/chara_1.png" alt="" />
           `;
-            charaName.textContent = "ファイヤードラゴン";
+            charaName.textContent = "メガドラグーン";
         } else if (firstStatus.CHARA == 1) {
             charaCard.innerHTML = `
               <img src="img/chara_2.png" alt="" />
           `;
-            charaName.textContent = "スシザムライ";
+            charaName.textContent = "スシマル";
         } else if (firstStatus.CHARA == 2) {
             charaCard.innerHTML = `
               <img src="img/chara_3.png" alt="" />
           `;
-            charaName.textContent = "アップルニンジャ";
+            charaName.textContent = "アップルノスケ";
         } else if (firstStatus.CHARA == 3) {
             charaCard.innerHTML = `
               <img src="img/chara_4.png" alt="" />
           `;
-            charaName.textContent = "ラーメンゴリラ";
+            charaName.textContent = "デカモリラーメン";
         } else if (firstStatus.CHARA == 4) {
             charaCard.innerHTML = `
               <img src="img/chara_5.png" alt="" />
           `;
-            charaName.textContent = "プリプリン";
+            charaName.textContent = "プリンパル";
         } else if (firstStatus.CHARA == 5) {
             charaCard.innerHTML = `
               <img src="img/chara_6.png" alt="" />
           `;
-            charaName.textContent = "チャラスケボー";
+            charaName.textContent = "スニエル=スニー";
         } else if (firstStatus.CHARA == 6) {
             charaCard.innerHTML = `
               <img src="img/chara_7.png" alt="" />
@@ -98,17 +98,17 @@ window.addEventListener("DOMContentLoaded", () => {
             charaCard.innerHTML = `
               <img src="img/chara_8.png" alt="" />
           `;
-            charaName.textContent = "バスケンケン";
+            charaName.textContent = "ダンクファング";
         } else if (firstStatus.CHARA == 8) {
             charaCard.innerHTML = `
               <img src="img/chara_9.png" alt="" />
           `;
-            charaName.textContent = "ハンバーガーズ";
+            charaName.textContent = "バーガーバースト";
         } else if (firstStatus.CHARA == 9) {
             charaCard.innerHTML = `
               <img src="img/chara_10.png" alt="" />
           `;
-            charaName.textContent = "カーニバル";
+            charaName.textContent = "カーライガ";
         } else {
             charaCard.innerHTML = `
               <img src="img/chara_00.png" alt="" />

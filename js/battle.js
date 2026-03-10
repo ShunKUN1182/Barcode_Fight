@@ -37,32 +37,32 @@ function outputStatus() {
         firstImg.innerHTML = `
               <img src="img/chara_1.png" alt="" />
           `;
-        firstCharaName.textContent = "ファイヤードラゴン";
+        firstCharaName.textContent = "メガドラグーン";
     } else if (firstStatus.CHARA == 1) {
         firstImg.innerHTML = `
               <img src="img/chara_2.png" alt="" />
           `;
-        firstCharaName.textContent = "スシザムライ";
+        firstCharaName.textContent = "スシマル";
     } else if (firstStatus.CHARA == 2) {
         firstImg.innerHTML = `
               <img src="img/chara_3.png" alt="" />
           `;
-        firstCharaName.textContent = "アップルニンジャ";
+        firstCharaName.textContent = "アップルノスケ";
     } else if (firstStatus.CHARA == 3) {
         firstImg.innerHTML = `
               <img src="img/chara_4.png" alt="" />
           `;
-        firstCharaName.textContent = "ラーメンゴリラ";
+        firstCharaName.textContent = "デカモリラーメン";
     } else if (firstStatus.CHARA == 4) {
         firstImg.innerHTML = `
               <img src="img/chara_5.png" alt="" />
           `;
-        firstCharaName.textContent = "プリプリン";
+        firstCharaName.textContent = "プリンパル";
     } else if (firstStatus.CHARA == 5) {
         firstImg.innerHTML = `
               <img src="img/chara_6.png" alt="" />
           `;
-        firstCharaName.textContent = "チャラスケボー";
+        firstCharaName.textContent = "スニエル=スニー";
     } else if (firstStatus.CHARA == 6) {
         firstImg.innerHTML = `
               <img src="img/chara_7.png" alt="" />
@@ -72,17 +72,17 @@ function outputStatus() {
         firstImg.innerHTML = `
               <img src="img/chara_8.png" alt="" />
           `;
-        firstCharaName.textContent = "バスケンケン";
+        firstCharaName.textContent = "ダンクファング";
     } else if (firstStatus.CHARA == 8) {
         firstImg.innerHTML = `
               <img src="img/chara_9.png" alt="" />
           `;
-        firstCharaName.textContent = "ハンバーガーズ";
+        firstCharaName.textContent = "バーガーバースト";
     } else if (firstStatus.CHARA == 9) {
         firstImg.innerHTML = `
               <img src="img/chara_10.png" alt="" />
           `;
-        firstCharaName.textContent = "カーニバル";
+        firstCharaName.textContent = "カーライガ";
     } else {
         firstImg.innerHTML = `
               <img src="img/chara_00.png" alt="" />
@@ -94,32 +94,32 @@ function outputStatus() {
         secondImg.innerHTML = `
               <img src="img/chara_1.png" alt="" />
           `;
-        secondCharaName.textContent = "ファイヤードラゴン";
+        secondCharaName.textContent = "メガドラグーン";
     } else if (secondStatus.CHARA == 1) {
         secondImg.innerHTML = `
               <img src="img/chara_2.png" alt="" />
           `;
-        secondCharaName.textContent = "スシザムライ";
+        secondCharaName.textContent = "スシマル";
     } else if (secondStatus.CHARA == 2) {
         secondImg.innerHTML = `
               <img src="img/chara_3.png" alt="" />
           `;
-        secondCharaName.textContent = "アップルニンジャ";
+        secondCharaName.textContent = "アップルノスケ";
     } else if (secondStatus.CHARA == 3) {
         secondImg.innerHTML = `
               <img src="img/chara_4.png" alt="" />
           `;
-        secondCharaName.textContent = "ラーメンゴリラ";
+        secondCharaName.textContent = "デカモリラーメン";
     } else if (secondStatus.CHARA == 4) {
         secondImg.innerHTML = `
               <img src="img/chara_5.png" alt="" />
           `;
-        secondCharaName.textContent = "プリプリン";
+        secondCharaName.textContent = "プリンパル";
     } else if (secondStatus.CHARA == 5) {
         secondImg.innerHTML = `
               <img src="img/chara_6.png" alt="" />
           `;
-        secondCharaName.textContent = "チャラスケボー";
+        secondCharaName.textContent = "スニエル=スニー";
     } else if (secondStatus.CHARA == 6) {
         secondImg.innerHTML = `
               <img src="img/chara_7.png" alt="" />
@@ -129,17 +129,17 @@ function outputStatus() {
         secondImg.innerHTML = `
               <img src="img/chara_8.png" alt="" />
           `;
-        secondCharaName.textContent = "バスケンケン";
+        secondCharaName.textContent = "ダンクファング";
     } else if (secondStatus.CHARA == 8) {
         secondImg.innerHTML = `
               <img src="img/chara_9.png" alt="" />
           `;
-        secondCharaName.textContent = "ハンバーガーズ";
+        secondCharaName.textContent = "バーガーバースト";
     } else if (secondStatus.CHARA == 9) {
         secondImg.innerHTML = `
               <img src="img/chara_10.png" alt="" />
           `;
-        secondCharaName.textContent = "カーニバル";
+        secondCharaName.textContent = "カーライガ";
     } else {
         secondImg.innerHTML = `
               <img src="img/chara_00.png" alt="" />
