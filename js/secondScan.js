@@ -61,54 +61,54 @@ window.addEventListener("DOMContentLoaded", () => {
             charaName.textContent = "ファイヤードラゴン";
         } else if (secondStatus.CHARA == 1) {
             charaCard.innerHTML = `
-              <img src="img/chara_1.png" alt="" />
+              <img src="img/chara_2.png" alt="" />
           `;
-            charaName.textContent = "ファイヤードラゴン";
+            charaName.textContent = "スシザムライ";
         } else if (secondStatus.CHARA == 2) {
             charaCard.innerHTML = `
-              <img src="img/chara_1.png" alt="" />
+              <img src="img/chara_3.png" alt="" />
           `;
-            charaName.textContent = "ファイヤードラゴン";
+            charaName.textContent = "アップルニンジャ";
         } else if (secondStatus.CHARA == 3) {
             charaCard.innerHTML = `
-              <img src="img/chara_1.png" alt="" />
+              <img src="img/chara_4.png" alt="" />
           `;
-            charaName.textContent = "ファイヤードラゴン";
+            charaName.textContent = "ラーメンゴリラ";
         } else if (secondStatus.CHARA == 4) {
             charaCard.innerHTML = `
-              <img src="img/chara_1.png" alt="" />
+              <img src="img/chara_5.png" alt="" />
           `;
-            charaName.textContent = "ファイヤードラゴン";
+            charaName.textContent = "プリプリン";
         } else if (secondStatus.CHARA == 5) {
             charaCard.innerHTML = `
-              <img src="img/chara_1.png" alt="" />
+              <img src="img/chara_6.png" alt="" />
           `;
-            charaName.textContent = "ファイヤードラゴン";
+            charaName.textContent = "チャラスケボー";
         } else if (secondStatus.CHARA == 6) {
             charaCard.innerHTML = `
-              <img src="img/chara_1.png" alt="" />
+              <img src="img/chara_7.png" alt="" />
           `;
-            charaName.textContent = "ファイヤードラゴン";
+            charaName.textContent = "ドリンクザムライ";
         } else if (secondStatus.CHARA == 7) {
             charaCard.innerHTML = `
-              <img src="img/chara_1.png" alt="" />
+              <img src="img/chara_8.png" alt="" />
           `;
-            charaName.textContent = "ファイヤードラゴン";
+            charaName.textContent = "バスケンケン";
         } else if (secondStatus.CHARA == 8) {
             charaCard.innerHTML = `
-              <img src="img/chara_1.png" alt="" />
+              <img src="img/chara_9.png" alt="" />
           `;
-            charaName.textContent = "ファイヤードラゴン";
+            charaName.textContent = "ハンバーガーズ";
         } else if (secondStatus.CHARA == 9) {
             charaCard.innerHTML = `
-              <img src="img/chara_1.png" alt="" />
+              <img src="img/chara_10.png" alt="" />
           `;
-            charaName.textContent = "ファイヤードラゴン";
+            charaName.textContent = "カーニバル";
         } else {
             charaCard.innerHTML = `
-              <img src="img/barcode_img.png" alt="" />
+              <img src="img/chara_00.png" alt="" />
           `;
-            charaName.textContent = "シークレットドラゴン";
+            charaName.textContent = "シクラーメン";
         }
         secondStatusbtn.addEventListener("click", () => {
             localStorage.setItem("secondStatus", JSON.stringify(secondStatus));
