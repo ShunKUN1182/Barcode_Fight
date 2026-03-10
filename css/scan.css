@@ -2,12 +2,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #aaa;
     height: 100vh;
     p {
         text-align: center;
         margin-top: 10px;
         margin-bottom: 120px;
+        font-size: 24px;
+        color: #fff;
+        /* -webkit-text-stroke: 1px #000; */
     }
     .barcode_box {
         border: #fff solid 1px;
@@ -15,13 +17,88 @@ main {
         height: 300px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
         #camera {
             width: 100%;
             height: 300px;
             overflow: hidden;
             border-radius: 5px;
             border: solid 2px #333;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 35%;
+                left: 16%;
+                width: 200px;
+                height: 80px;
+                background-image: url(../img/barcode_img.png);
+                background-position: center;
+                background-size: cover;
+            }
+            video {
+                width: 100%;
+                height: 100%;
+            }
+            p {
+                height: 5px;
+            }
+        }
+    }
+}
+
+.start_btn {
+    margin: 0 40px;
+    height: 100px;
+    border: 5px solid #000;
+    border-radius: 18px;
+    background-color: #e80d0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn_inner {
+        height: 75px;
+        width: 93%;
+        margin-right: 10px;
+        margin-bottom: 4px;
+        background-color: #e80d0f;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        border-top: 4px solid #fff;
+        border-left: 4px solid #fff;
+        border-radius: 12px 2px 2px 2px;
+        h2 {
+            width: 100%;
+            height: 100%;
+            a {
+                width: 100%;
+                height: 100%;
+                color: #fff;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                font-size: 48px;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}
+
+.back {
+    background-color: #0299d3;
+    width: 185px;
+    height: 75px;
+    .btn_inner {
+        width: 150px;
+        height: 50px;
+        background-color: #0299d3;
+        h2 {
+            a {
+                margin-left: 8px;
+                font-size: 36px;
+            }
         }
     }
 }
