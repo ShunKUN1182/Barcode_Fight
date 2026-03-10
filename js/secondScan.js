@@ -39,11 +39,6 @@ window.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#result").textContent = "読み取り成功：" + code;
 
         console.log(code);
-
-        console.log(code.slice(3, 6));
-        console.log(code.slice(6, 9));
-        console.log(code.slice(9, 12));
-        console.log(code.slice(-1));
         console.log(secondStatus);
         const tempHP = code.slice(3, 6).replace(/^0/, "");
         const tempATK = code.slice(6, 9).replace(/^0/, "");
