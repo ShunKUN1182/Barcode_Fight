@@ -13,6 +13,8 @@ const secondImg = document.querySelector("#secondImg");
 const firstCharaName = document.querySelector("#firstCharaName");
 const secondCharaName = document.querySelector("#secondCharaName");
 const battleLog = document.querySelector(".battle_logs");
+const addModal = document.querySelector("#addModal");
+console.log(addModal);
 
 const firstStatus = JSON.parse(localStorage.getItem("firstStatus"));
 const secondStatus = JSON.parse(localStorage.getItem("secondStatus"));
@@ -167,6 +169,14 @@ function outputHP(HP, ATKside) {
             firstHPBar.style.width = `0%`;
             clearInterval(firstTimeID);
             clearInterval(secondTimeID);
+            addModal.insertAdjacentHTML(
+                "beforeend",
+                `
+                  <div class="finish">
+                      <img src="img/finish_Img.png" alt="" />
+                  </div>
+                `,
+            );
         }
         const parseHP = (HP / firstMaxHP) * 100;
         firstHPBar.style.width = `${parseHP}%`;
@@ -175,6 +185,14 @@ function outputHP(HP, ATKside) {
             secondHPBar.style.width = `0%`;
             clearInterval(firstTimeID);
             clearInterval(secondTimeID);
+            addModal.insertAdjacentHTML(
+                "beforeend",
+                `
+                  <div class="finish">
+                      <img src="img/finish_Img.png" alt="" />
+                  </div>
+                `,
+            );
         }
         const parseHP = (HP / secondMaxHP) * 100;
         secondHPBar.style.width = `${parseHP}%`;

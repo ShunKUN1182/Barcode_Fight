@@ -10,71 +10,73 @@
         <script src="js/battle.js" defer></script>
     </head>
     <body>
-        <div class="battle_view">
-            <div class="battle_status">
-                <h1 id="firstCharaName">レッドドラゴン</h1>
-                <div id="firstImg">
-                    <img src="img/chara_1.png" alt="" id="firstImg" />
+        <main id="addModal">
+            <div class="battle_view">
+                <div class="battle_status">
+                    <h1 id="firstCharaName">レッドドラゴン</h1>
+                    <div id="firstImg">
+                        <img src="img/chara_1.png" alt="" id="firstImg" />
+                    </div>
+                    <div class="card_status">
+                        <div class="status_icon">
+                            <h3>HP</h3>
+                            <p id="firstHPStats">????</p>
+                        </div>
+                        <div class="status_icon">
+                            <h3>ATK</h3>
+                            <p id="firstATKStats">????</p>
+                        </div>
+                        <div class="status_icon">
+                            <h3>SPD</h3>
+                            <p id="firstSPDStats">????</p>
+                        </div>
+                    </div>
+                    <div class="hp_box">
+                        <div class="hp_text">
+                            <h3>HP</h3>
+                            <p id="firstHPText">8888</p>
+                        </div>
+                        <div class="hp_bar" id="firstHPBar"></div>
+                    </div>
                 </div>
-                <div class="card_status">
-                    <div class="status_icon">
-                        <h3>HP</h3>
-                        <p id="firstHPStats">????</p>
+                <div class="battle_status">
+                    <h1 id="secondCharaName">リンゴメーム</h1>
+                    <div id="secondImg">
+                        <img src="img/chara_1.png" alt="" id="firstImg" />
                     </div>
-                    <div class="status_icon">
-                        <h3>ATK</h3>
-                        <p id="firstATKStats">????</p>
+                    <div class="card_status">
+                        <div class="status_icon">
+                            <h3>HP</h3>
+                            <p id="secondHPStats">????</p>
+                        </div>
+                        <div class="status_icon">
+                            <h3>ATK</h3>
+                            <p id="secondATKStats">????</p>
+                        </div>
+                        <div class="status_icon">
+                            <h3>SPD</h3>
+                            <p id="secondSPDStats">????</p>
+                        </div>
                     </div>
-                    <div class="status_icon">
-                        <h3>SPD</h3>
-                        <p id="firstSPDStats">????</p>
+                    <div class="hp_box">
+                        <div class="hp_text">
+                            <h3>HP</h3>
+                            <p id="secondHPText">8888</p>
+                        </div>
+                        <div class="hp_bar" id="secondHPBar"></div>
                     </div>
-                </div>
-                <div class="hp_box">
-                    <div class="hp_text">
-                        <h3>HP</h3>
-                        <p id="firstHPText">8888</p>
-                    </div>
-                    <div class="hp_bar" id="firstHPBar"></div>
                 </div>
             </div>
-            <div class="battle_status">
-                <h1 id="secondCharaName">リンゴメーム</h1>
-                <div id="secondImg">
-                    <img src="img/chara_1.png" alt="" id="firstImg" />
-                </div>
-                <div class="card_status">
-                    <div class="status_icon">
-                        <h3>HP</h3>
-                        <p id="secondHPStats">????</p>
-                    </div>
-                    <div class="status_icon">
-                        <h3>ATK</h3>
-                        <p id="secondATKStats">????</p>
-                    </div>
-                    <div class="status_icon">
-                        <h3>SPD</h3>
-                        <p id="secondSPDStats">????</p>
-                    </div>
-                </div>
-                <div class="hp_box">
-                    <div class="hp_text">
-                        <h3>HP</h3>
-                        <p id="secondHPText">8888</p>
-                    </div>
-                    <div class="hp_bar" id="secondHPBar"></div>
-                </div>
-            </div>
-        </div>
 
-        <div class="battle_wrap">
-            <h2>バトルログ</h2>
-            <div class="battle_logs">
-                <div class="battle_log">
-                    <p>バトル開始！！！</p>
+            <div class="battle_wrap">
+                <h2>バトルログ</h2>
+                <div class="battle_logs">
+                    <div class="battle_log">
+                        <p>バトル開始！！！</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
         <!-- <div class="modal"></div> -->
     </body>
 </html>
