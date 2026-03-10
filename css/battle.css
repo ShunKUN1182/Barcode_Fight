@@ -180,9 +180,11 @@
 .modal {
     position: fixed;
     top: 0;
+    z-index: 100000;
     width: 100vw;
     height: 100vh;
     background-color: #2b2b2b;
+    display: none;
     h1 {
         color: #fff;
         margin: 80px 0 32px;

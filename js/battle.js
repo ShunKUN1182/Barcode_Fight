@@ -14,6 +14,8 @@ const firstCharaName = document.querySelector("#firstCharaName");
 const secondCharaName = document.querySelector("#secondCharaName");
 const battleLog = document.querySelector(".battle_logs");
 const addModal = document.querySelector("#addModal");
+const modal = document.querySelector(".modal");
+const winName = document.querySelector("#winName");
 console.log(addModal);
 
 const firstStatus = JSON.parse(localStorage.getItem("firstStatus"));
@@ -177,6 +179,10 @@ function outputHP(HP, ATKside) {
                   </div>
                 `,
             );
+            setTimeout(() => {
+                modal.style.display = "block";
+                winName.textContent = document.querySelector("#firstCharaName").textContent;
+            });
         }
         const parseHP = (HP / firstMaxHP) * 100;
         firstHPBar.style.width = `${parseHP}%`;
@@ -193,6 +199,10 @@ function outputHP(HP, ATKside) {
                   </div>
                 `,
             );
+            setTimeout(() => {
+                modal.style.display = "block";
+                winName.textContent = document.querySelector("#secondCharaName").textContent;
+            }, 2000);
         }
         const parseHP = (HP / secondMaxHP) * 100;
         secondHPBar.style.width = `${parseHP}%`;
