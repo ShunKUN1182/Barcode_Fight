@@ -6,8 +6,8 @@ const secondATK = document.querySelector("#secondATKStats");
 const secondSPD = document.querySelector("#secondSPDStats");
 const firstHPBar = document.querySelector("#firstHPBar");
 const secondHPBar = document.querySelector("#secondHPBar");
-const firstHPText = document.querySelector("#firstHPtext");
-const secondHPText = document.querySelector("#secondHPtext");
+const firstHPText = document.querySelector("#firstHPText");
+const secondHPText = document.querySelector("#secondHPText");
 
 const firstStatus = JSON.parse(localStorage.getItem("firstStatus"));
 const secondStatus = JSON.parse(localStorage.getItem("secondStatus"));

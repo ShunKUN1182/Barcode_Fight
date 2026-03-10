@@ -17,6 +17,13 @@
             width: 150px;
             height: 150px;
             margin-bottom: 15px;
+            /* transform: translateY(-20px); */
+        }
+        #firstImg {
+            animation: firstAnime 2s infinite linear;
+        }
+        #secondImg {
+            animation: firstAnime 1.8s 0.3s infinite linear;
         }
         .card_status {
             display: flex;
@@ -107,5 +114,29 @@
     .second {
         background-color: rgba(2, 153, 211, 0.5);
         border: solid 1px #0299d3;
+    }
+}
+
+@keyframes firstAnime {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-15px);
+    }
+    30% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    85% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
