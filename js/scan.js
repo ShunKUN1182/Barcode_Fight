@@ -47,9 +47,9 @@ window.addEventListener("DOMContentLoaded", () => {
         const tempHP = code.slice(3, 6).replace(/^0/, "");
         const tempATK = code.slice(6, 9).replace(/^0/, "");
         const tempSPD = code.slice(9, 12).replace(/^0/, "");
-        firstStatus.HP = tempHP;
-        firstStatus.ATK = tempATK;
-        firstStatus.SPD = tempSPD;
+        firstStatus.HP = tempHP + "0";
+        firstStatus.ATK = tempATK + "0";
+        firstStatus.SPD = tempSPD + "0";
         firstStatus.CHARA = code.slice(-1);
 
         Quagga.stop();
