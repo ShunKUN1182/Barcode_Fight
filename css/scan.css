@@ -148,10 +148,10 @@ main {
 }
 
 .modal {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100vw;
-    height: 100vh;
+    height: 120%;
     background-color: #2b2b2b;
     display: none;
     p {

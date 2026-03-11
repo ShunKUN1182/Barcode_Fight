@@ -178,11 +178,12 @@
 }
 
 .modal {
-    position: fixed;
+    position: absolute;
     top: 0;
+    left: 0;
     z-index: 100000;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     background-color: #2b2b2b;
     display: none;
     h1 {
