@@ -44,10 +44,23 @@ window.addEventListener("DOMContentLoaded", () => {
         const tempHP = code.slice(3, 6).replace(/^0/, "");
         const tempATK = code.slice(6, 9).replace(/^0/, "");
         const tempSPD = code.slice(9, 12).replace(/^0/, "");
+        let tempCHARA = code.slice(-1);
+        const firstCHARA = JSON.parse(localStorage.getItem("firstStatus"));
+        console.log(firstCHARA.CHARA);
+
+        if (tempCHARA == firstCHARA.CHARA) {
+            if (tempCHARA == 9) {
+                tempCHARA = 0;
+            } else {
+                tempCHARA = Number(tempCHARA) + 1;
+            }
+        }
+        console.log(tempCHARA);
+
         secondStatus.HP = tempHP + "0";
         secondStatus.ATK = tempATK + "0";
         secondStatus.SPD = tempSPD + "0";
-        secondStatus.CHARA = code.slice(-1);
+        secondStatus.CHARA = tempCHARA;
 
         Quagga.stop();
 
